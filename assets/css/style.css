@@ -251,11 +251,12 @@ h2 {
   header nav ul *:not(.signIn, .get) {
     display: none;
   }
+
   .Trend {
     margin: 20px;
   }
   .start {
-    height: 32vw;
+    height: 60vw;
   }
   .svgstart {
     display: none;
@@ -264,10 +265,34 @@ h2 {
     margin-top: 50px;
     margin-left: 20px;
   }
-
-  .tList div {
-    width: 50%;
+  .startdiv * {
     margin-bottom: 20px;
+  }
+
+  .startdiv h1 {
+    font-family: "Spectral", serif;
+    font-size: 14vw;
+    font-weight: 700;
+  }
+  .startdiv h3 {
+    margin-right: 20px;
+  }
+  .tList {
+    flex-direction: column;
+  }
+  .tList div {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .trendnum p {
+    font-size: 6vw;
+  }
+  .desc {
+    min-height: 26px;
+    overflow: hidden;
+  }
+  .img img {
+    margin: 0;
   }
   .art {
     margin: 20px;
@@ -276,7 +301,7 @@ h2 {
   }
   .type {
     width: auto;
-    top: 6.9vw;
+    top: 13.9vw;
   }
   .type div {
     margin: 10px 0;
@@ -284,11 +309,13 @@ h2 {
   .article img {
     width: 2.5vw;
   }
-  .typelist {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+  .type * {
+    font-size: smaller;
+  }
+  .type {
+    font-size: larger;
+  }
+  .type nav ul {
+    justify-content: normal;
   }
 }
