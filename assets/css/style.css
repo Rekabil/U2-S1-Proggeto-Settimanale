@@ -46,8 +46,8 @@ header nav ul * {
 }
 
 .startdiv {
-  margin-top: 50px;
-  margin-left: 100px;
+  margin-top: 7vw;
+  margin-left: 10vw;
   display: flex;
   flex-direction: column;
 }
@@ -116,6 +116,9 @@ header nav ul * {
   justify-content: space-between;
   height: 7vw;
   margin-bottom: 20px;
+}
+.article * {
+  font-size: 1vw;
 }
 .article img {
   width: 1.5vw;
