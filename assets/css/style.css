@@ -8,7 +8,6 @@ header {
   background: #ffc017;
   display: flex;
   border-bottom: 1px solid #191919;
-  align-items: stretch;
   justify-content: space-between;
   position: sticky;
   top: 0;
@@ -66,7 +65,7 @@ header nav ul * {
   background: #191919;
   border-radius: 25px;
   width: 30%;
-  height: 10%;
+  height: 25px;
   border: none;
 }
 
@@ -131,9 +130,12 @@ h4 {
   display: flex;
 }
 .type {
+  padding-top: 10px;
   width: 50%;
   position: sticky;
-  top: 80px;
+  z-index: 1;
+  top: 6vw;
+  background: white;
   height: min-content;
 }
 .type div {
@@ -189,4 +191,104 @@ h2 {
   font-weight: 900;
   display: flex;
   align-items: center;
+}
+
+@media screen and (max-width: 1199px) {
+  header img {
+    margin-left: 20px;
+  }
+  header nav {
+    margin-right: 0px;
+  }
+  header nav ul * {
+    padding: 5px 10px;
+  }
+  .Trend {
+    margin: 20px;
+  }
+  .startdiv {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .tList div {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .art {
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .type {
+    width: auto;
+    top: 6.9vw;
+  }
+  .type div {
+    margin: 10px 0;
+  }
+  .article img {
+    width: 2.5vw;
+  }
+  .typelist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 500px) {
+  header img {
+    margin-left: 20px;
+  }
+  header nav {
+    margin-right: 0px;
+  }
+  header nav ul * {
+    padding: 5px 10px;
+  }
+  header nav ul *:not(.signIn, .get) {
+    display: none;
+  }
+  .Trend {
+    margin: 20px;
+  }
+  .start {
+    height: 32vw;
+  }
+  .svgstart {
+    display: none;
+  }
+  .startdiv {
+    margin-top: 50px;
+    margin-left: 20px;
+  }
+
+  .tList div {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .art {
+    margin: 20px;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .type {
+    width: auto;
+    top: 6.9vw;
+  }
+  .type div {
+    margin: 10px 0;
+  }
+  .article img {
+    width: 2.5vw;
+  }
+  .typelist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
 }

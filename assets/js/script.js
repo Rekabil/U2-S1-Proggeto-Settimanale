@@ -7,8 +7,7 @@ let navpos = nav.offsetTop;
 let button = document.getElementById("headbutton");
 
 function sticky() {
-  console.log(window.scrollY, navpos);
-  if (window.scrollY > navpos) {
+  if (window.scrollY >= 300) {
     nav.classList.add("scrolling");
     button.classList.add("bchange");
   } else {
